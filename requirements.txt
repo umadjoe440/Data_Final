@@ -47,9 +47,6 @@ lazy-object-proxy==1.4.3
 Markdown==3.2.1
 MarkupSafe==1.1.1
 mccabe==0.6.1
-mkl-fft
-mkl-random
-mkl-service
 #mkl-fft==1.0.15
 #mkl-random==1.1.0
 #mkl-service==2.3.0
