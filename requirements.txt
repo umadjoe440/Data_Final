@@ -102,7 +102,7 @@ vaderSentiment==3.3.1
 wasabi==0.6.0
 wcwidth==0.1.9
 Werkzeug==1.0.1
-wheel>=0.34.2
+wheel
 win-inet-pton==1.1.0
 wincertstore==0.2
 wrapt==1.12.1
