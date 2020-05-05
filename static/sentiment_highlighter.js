@@ -23,7 +23,7 @@ console.log(array[3].value)
   }
     console.log(negative)
   });
-var textbox = document.getElementsByTagName('p')[0];
+var textbox = document.getElementsByName('thetext')[0];
 
 var highlightSWords = function() {
   //foreach word, perform highlighting actions
