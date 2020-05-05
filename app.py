@@ -150,7 +150,7 @@ app = Flask(__name__)
 
 # Main home page
 @app.route("/", methods=['GET', 'POST'])
-def whatever():
+def text_to_examine():
     if request.method == 'GET':
         return render_template('index.html')
 
