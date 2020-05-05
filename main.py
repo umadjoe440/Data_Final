@@ -102,7 +102,9 @@ def sentiment_score(text):
     return(statistics.mean(scores))
 def pronomialization(text):
     noun_count = check_pos_tag(text, 'noun')
-    return(personal_pronouns(text) / noun_count)
+    print(f"noun count is:  {noun_count}")
+    # return n / d if d else 0
+    return(personal_pronouns(text)/noun_count if noun_count else 0)
 
 def fatigue_ratio(text):
     counts = []
