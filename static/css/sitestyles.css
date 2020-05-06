@@ -15,7 +15,7 @@ header {
 body {
     background-color: #171717;
     font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-size: medium;
     align-content: center;
@@ -40,6 +40,9 @@ input, select, textarea{
     color: black;
 }
 
+textarea:focus, input:focus {
+    color: black;
+}
 
     circle {
         stroke: #565352;
@@ -60,9 +63,10 @@ input, select, textarea{
 }
 
 .DivWithScroll{
-    height:500px;
+    height:400px;
     overflow:scroll;
     overflow-x:hidden;
+    padding-top: 10px;
 }
 .box {
     border: 1px greenyellow ;
