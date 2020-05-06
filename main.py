@@ -18,7 +18,10 @@ from nltk import word_tokenize, sent_tokenize
 import unicodedata
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import nltk
+nltk.data.path.append("/usr/local/share/nltk_data")
+nltk.data.path.append("/root/nltk_data")
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 from nltk.tokenize import word_tokenize
 from collections import Counter
 import json
@@ -164,6 +167,8 @@ def text_to_examine():
         text1 = [textc]
         text2 = to_lowercase(text1)
         text3 = str(text2)
+        nltk.download('punkt')
+        nltk.download('averaged_perceptron_tagger')
         inputvector =  get_features(textc)
         inputvector = np.array(inputvector.reshape(1,-1))
         inputvector = scaler.transform(inputvector)
