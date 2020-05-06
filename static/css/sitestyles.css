@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+header {
+    background-color: #2F2F2F;
+    -webkit-box-shadow: 0 5px #333333;
+    box-shadow: 0 5px #333333;
+    text-shadow: 1px 1px #5F5D5D;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+body {
+    background-color: #171717;
+    font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+ .input-box {
+    background-color: #2F2F2F;
+}
+#text_box {
+    width: 500px;
+
+}
+
+.jumbotron {
+    padding-top: 50px;
+    background-color:  #2F2F2F;
+    border: whitesmoke;
+    color: white;
+
+}
+input, select, textarea{
+    color: black;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+    circle {
+        stroke: #565352;
+        stroke-width: 1;
+}
+.DivToScroll{
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    left: auto;
+    padding-top: auto;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: auto;
+}
+
+.DivWithScroll{
+    height:400px;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding-top: 10px;
+}
+.box {
+    border: 1px greenyellow ;
+    height: 100px;
+    width:  700px;
+    padding-top: auto;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: auto;
+  }
+   
+#h2 {
+}
+.sub-request {
+}
+#sub-request {
+}
