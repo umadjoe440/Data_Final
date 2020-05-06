@@ -23,11 +23,7 @@ console.log(array[3].value)
   }
     console.log(negative)
   });
-<<<<<<< Updated upstream
 var textbox = document.getElementsByTagName('p')[0];
-=======
-var textbox = document.getElementsByName('section1')[0];
->>>>>>> Stashed changes
 
 var highlightSWords = function() {
   //foreach word, perform highlighting actions
