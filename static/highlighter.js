@@ -1,7 +1,11 @@
 var arr = ['i', 'me', 'myself', 'mine', 'my'];
 //locate the element on the page to do the word operations
 //this will find the first <p> tag
+<<<<<<< Updated upstream
 var textbox = document.getElementsByTagName('p')[0];
+=======
+var textbox = document.getElementsByName('section1')[0];
+>>>>>>> Stashed changes
 
 var highlightPWords = function() {
   //foreach word, perform highlighting actions
@@ -45,7 +49,12 @@ var arrA = [
 
 //locate the element on the page to do the word operations
 //this will find the first <p> tag
+<<<<<<< Updated upstream
 var textbox = document.getElementsByTagName('p')[0];
+=======
+var textbox = document.getElementsByName('section1')[0];
+console.log(textbox)
+>>>>>>> Stashed changes
 
 var highlightAWords = function() {
   //foreach word, perform highlighting actions
