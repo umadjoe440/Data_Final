@@ -18,6 +18,7 @@ from nltk import word_tokenize, sent_tokenize
 import unicodedata
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import nltk
+nltk.data.path.append("/usr/local/share/nltk_data")
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 from collections import Counter
