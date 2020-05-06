@@ -27,7 +27,11 @@ body {
     width: 500px;
 
 }
+p {font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+    
+    color: white;
 
+}
 .jumbotron {
     padding-top: 50px;
     background-color:  #2F2F2F;
@@ -115,21 +119,24 @@ textarea:focus, input:focus {
         }
 
         .card {
-            padding-top: 10px;
-            margin-bottom: 10px; /* Added */
-            border: 2px solid #004D6F;
-            height: 300px;
+    padding-top: 10px;
+    margin-bottom: 10px; /* Added */
+    border: 2px solid #004D6F;
+    height: 300px;
+    color: #FFFFFF;
         }
 
         .cards {
             padding-top: 30px;
             width: 1200;
-            padding-left: 35px 
+            padding-left: 35px; 
+           
         }
 
         .container {
         width: 1300px;
         margin: auto;
+        color: #fff;
         }
 
         #fixed-header {
@@ -151,9 +158,21 @@ textarea:focus, input:focus {
         }
 
    
-#h2 {
+
+.highlighter-buttons {
+    background-color: #000000;
+    color: #337ab7;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px #171717;
+    border-style: outset;
+    border-radius: 2px;
+    border-collapse: collapse;
 }
-.sub-request {
-}
-#sub-request {
+
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
 }
