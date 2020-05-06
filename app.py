@@ -180,7 +180,7 @@ def text_to_examine():
         return render_template('index.html',
                                      original_input={'Text':text3},
                                      words = textc,
-                                     result=roundround(prediction, 2), absolutist = round((absolutist * 100), 2), sentiment = round((sentiments * 100),2), pronouns = round((pronoun * 100) ,2), fatigue = round((fatigue * 100), 2),
+                                     result=round((prediction) * 100, 2), absolutist = round((absolutist * 100), 2), sentiment = round((sentiments * 100),2), pronouns = round((pronoun * 100) ,2), fatigue = round((fatigue * 100), 2),
                                      data = json.dumps(tfs_dict(text))
                                      )
         
