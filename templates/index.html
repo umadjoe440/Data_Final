@@ -55,7 +55,7 @@
             <br>
             <br>
 
-            <p>Unable? Unwilling? Not to worry, we have you covered
+            <p>Example Text:
 
             </p><input type="button" value="Use Kurt Cobain's Final Writing" name="cobain" onclick="populateTextarea()">
             <br>
@@ -74,9 +74,9 @@
             <div class="card col-sm-3 mx-auto" style="width: 300px;">
                 <div class="card-body">
                     <h5 class="card-title" >Sentiment Score</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ sentiment }}</h6>
+                    <h4>{{ sentiment }}</h4>
                     <p class="card-text" id="card-text">Sentiment score is a measure of how positive or negative text is, from -100 (very negative) to 100 (very positive).</p>
-                    <a href="https://monkeylearn.com/sentiment-analysis/" class="card-link">Why is this important</a>
+                    <a href="https://monkeylearn.com/sentiment-analysis/" class="card-link">Why is this important?</a>
                     
               </div>
             </div>
@@ -85,19 +85,19 @@
                 <div class="card-body">
                     <h5 class="card-title" id="h">Pronomialization Index</h5>
                     <p>&nbsp;</p>
-<h6 class="card-subtitle mb-2 text-muted">{{ pronouns }}</h6>
+                    <h4>{{ pronouns }}</h4>
                     <p class="card-text">Pronomialization is the ratio of first person singular pronouns (I, my, me, myself, mine) to total nouns in the text.</p>
-                    <a href="https://www.google.com/amp/s/theconversation.com/amp/people-with-depression-use-language-differently-heres-how-to-spot-it-90877" class="card-link">Why is this important</a>
+                    <a href="https://www.google.com/amp/s/theconversation.com/amp/people-with-depression-use-language-differently-heres-how-to-spot-it-90877" class="card-link">Why is this important?</a>
                    
                 </div>
             </div>
 
             <div class="card col-sm-3 mx-auto" style="width: 300px;">
                 <div class="card-body">
-                    <h5 class="card-title" id="h5">Absolutist Index</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ absolutist }}</h6>
+                    <h5 class="card-title" >Absolutist Index</h5>
+                    <h4>{{ absolutist }}</h4>
                     <p class="card-text">Absolutist Index repesents how much absolutist language, words like always and never, is in the text).</p>
-                    <a href="https://www.google.com/amp/s/www.wsj.com/amp/articles/the-words-that-can-signal-youre-depressed-1528724000" class="card-link">Why is this important</a>
+                    <a href="https://www.google.com/amp/s/www.wsj.com/amp/articles/the-words-that-can-signal-youre-depressed-1528724000" class="card-link">Why is this important?</a>
                     
                 </div>
             </div>
@@ -105,9 +105,9 @@
             <div class="card col-sm-3 mx-auto" style="width: 300px;">
                 <div class="card-body">
                     <h5 class="card-title" id="h5">Fatigue Index</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ fatigue }}</h6>
-                    <p class="card-text">Fatigue index is a measure of how often concepts related to a feeling of tiredness appear in the text</p>
-                    <a href="https://www.healthline.com/health/depression/fatigue" class="card-link">Why is this important</a>
+                    <h4>{{ fatigue }}</h4>
+                    <p>Fatigue index is a measure of how often concepts related to a feeling of tiredness appear in the text</p>
+                    <a href="https://www.healthline.com/health/depression/fatigue" class="card-link">Why is this important?</a>
                     
                 </div>
             </div>
@@ -120,15 +120,16 @@
     </div>
     <br>
     <p>Click a button to highlight speech patterns in the Writing</p>
+    <button class="highlighter-buttons" onClick="highlightSWords()">Highlight sentiment</button>
     <button class="highlighter-buttons" onClick="highlightPWords()"> Highlight pronouns</button>
     <button class="highlighter-buttons" onClick="highlightAWords()">Highlight absolutist</button>
-    <button class="highlighter-buttons" onClick="highlightSWords()">Highlight sentiment</button>
+    
     <!-- Create a div where the graph will take place -->
-    <div id="my_dataviz">Frequency and sentiment of words in sentences with "I"</div>
+    <div id="my_dataviz">This plot shows the frequency of emotional words used in sentences in which the author is talking about themselves.</div>
 	
 	
 	<div><footer class="navbar-fixed-bottom">Contact us:
-		<a href=""> Zachary Wenz</a>,<a href=""> Joseph Patton</a>, <a href="">Ahmed Abouhashem</a> , and <a href="">Jesse Kowalcic</a></footer></div>
+		<a href="https://www.linkedin.com/in/zacharywenz/"> Zachary Wenz</a>,<a href="https://www.linkedin.com/in/joseph-patton-1814866/"> Joseph Patton</a>, <a href="https://www.linkedin.com/in/ahmed-abouhashem-53167b126/">Ahmed Abouhashem</a> , and <a href="https://www.linkedin.com/in/jesse-kowalcic-24a55114a/">Jesse Kowalcic</a></footer></div>
 
   
   
