@@ -15,9 +15,10 @@ header {
 body {
     background-color: #171717;
     font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-size: medium;
+    align-content: center;
 }
  .input-box {
     background-color: #2F2F2F;
@@ -27,7 +28,21 @@ body {
 
 }
 
+.jumbotron {
+    padding-top: 50px;
+    background-color:  #2F2F2F;
+    border: whitesmoke;
+    color: white;
+    width: 1000
 
+}
+input, select, textarea{
+    color: black;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
 
     circle {
         stroke: #565352;
@@ -48,10 +63,92 @@ body {
 }
 
 .DivWithScroll{
-    height:500px;
+    height:400px;
     overflow:scroll;
     overflow-x:hidden;
+    padding-top: 10px;
 }
+.box {
+    border: 1px greenyellow ;
+    height: 100px;
+    width:  700px;
+    padding-top: auto;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: auto;
+  }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #textentry {
+            height: 400px;
+            width: 600px;
+            margin: auto;
+            position: relative;
+            top: 100px
+        }
+
+        #text_box {
+            height: 125px;
+            font-size: 12pt;
+            padding-bottom: 100px;
+        }
+
+        #section1 {
+            height: 400px;
+            width: 1000px;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        #my_dataviz {
+            height: 600px;
+            padding-top: 200px;
+        }
+
+        #section3 {
+            height: 400px;
+            padding-top: 50px;
+            color: black;
+            border: whitesmoke;
+        }
+
+        .card {
+            padding-top: 10px;
+            margin-bottom: 10px; /* Added */
+            border: 2px solid #004D6F;
+            height: 300px;
+        }
+
+        .cards {
+            padding-top: 30px;
+            width: 1200;
+            padding-left: 35px 
+        }
+
+        .container {
+        width: 1300px;
+        margin: auto;
+        }
+
+        #fixed-header {
+            width: 100%;
+            position: fixed;
+            background: #333;
+            padding: 10px 0;
+            color: #fff;
+            z-index: 1000;
+            height: 150px
+        }
+
+        #fixed-header {
+            top: 10px;
+        }
+
+        body {
+            padding-top: 25px;
+        }
 
    
 #h2 {
