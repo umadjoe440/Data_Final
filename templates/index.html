@@ -1,87 +1,7 @@
 <!doctype html>
 <html>
-
+<!-- test change-->
 <head>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        #textentry {
-            height: 400px;
-            width: 1100px;
-            margin: auto;
-            position: relative;
-            top: 100px
-        }
-
-        #text_box {
-            height: 125px;
-            font-size: 12pt;
-            padding-bottom: 100px;
-        }
-
-        #section1 {
-            height: 400px;
-            width: 1100px;
-            margin: auto;
-            padding-top: 10px;
-        }
-
-        #my_dataviz {
-            height: 600px;
-            padding-top: 200px;
-        }
-
-        #section3 {
-            height: 400px;;
-            margin: auto;
-            padding-top: 50px;
-            color: black;
-            border: whitesmoke;
-        }
-
-        .card {
-            margin: auto;
-            padding-top: 10px;
-            margin: 0 auto; /* Added */
-            float: none; /* Added */
-            margin-bottom: 10px; /* Added */
-            border: 2px solid #004D6F;
-            height: 300px
-        }
-
-        .cards {
-            margin: auto;
-            padding-left: 150px;
-            padding-top: 30px;
-        }
-
-        .container {
-        width: 2504px;
-        margin-right: auto;
-        margin-left: auto;
-        }
-
-        #fixed-header {
-            width: 100%;
-            position: fixed;
-            background: #333;
-            padding: 10px 0;
-            color: #fff;
-            z-index: 1000;
-            height: 150px
-        }
-
-        #fixed-header {
-            top: 10px;
-        }
-
-        body {
-            padding-top: 25px;
-        }
-
-    </style>
 
     <meta charset="utf-8">
     <title>Depression Indicator</title>
@@ -120,12 +40,13 @@
     </script>
     <div id="textentry" name="textentry">
         <form action="{{ url_for('text_to_examine') }}" method="POST">
-
+            <br>
+            <br>
             <p id="sub-request">Please write or copy and paste text into the box. The longer, the better!</p>
 
             <textarea id="text_box" rows="4" columns="50" name="text" type="text" required></textarea>
             <br>
-           
+
             <br>
             <input type="submit">
             <br>
@@ -139,59 +60,55 @@
     </div>
     <br>
     <div id="section3" class="container">
-        <div class="container">
-            <div class="jumbotron">
-              <h1> Warning Sign Index Score</h1>
-              <h1> {{ result }}</h1>
-              <p>Information about index.</p>
-              <p>link or more information.</p>
-            </div>
+        <div class="jumbotron">
+            <h1> Warning Sign Index Score</h1>
+            <h1> {{ result }}</h1>
+            <p>Information about index.</p>
+            <p>link or more information.</p>
         </div>
         <br>
-        <br>
-    </div>
-    <div class="card-columns cards">
-        <div class="card col-sm-3" style="width: 30rem;">
-            <div class="card-body">
-              <h5 class="card-title">Sentiment Score</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ sentiment }}</h6>
-              <p class="card-text">Information about sentiment.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+        <div class="card-columns cards">
+            <div class="card col-sm-3 mx-auto" style="width: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Sentiment Score</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ sentiment }}</h6>
+                    <p class="card-text">Information about sentiment.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card col-sm-3" style="width: 30rem;">
-            <div class="card-body">
-              <h5 class="card-title">Pronomialization Index</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ pronouns }}</h6>
-              <p class="card-text">Information about pronomialization.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="card col-sm-3 mx-auto" style="width: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Pronomialization Index</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ pronouns }}</h6>
+                    <p class="card-text">Information about pronomialization.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card col-sm-3" style="width: 30rem;">
-            <div class="card-body">
-              <h5 class="card-title">Absolutist Index</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ absolutist }}</h6>
-              <p class="card-text">Information about absolutist language.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="card col-sm-3 mx-auto" style="width: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Absolutist Index</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ absolutist }}</h6>
+                    <p class="card-text">Information about absolutist language.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card col-sm-3" style="width: 30rem;">
-            <div class="card-body">
-              <h5 class="card-title">Fatigue Index</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ fatigue }}</h6>
-              <p class="card-text">Information about fatigue index.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+            <div class="card col-sm-3 mx-auto" style="width: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Fatigue Index</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ fatigue }}</h6>
+                    <p class="card-text">Information about fatigue index.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
             </div>
         </div>
     </div>
-
 
     <div class="result DivWithScroll" id="section1" style="overflow-y:scroll;">
 
