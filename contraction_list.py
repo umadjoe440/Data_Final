@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -10,6 +11,8 @@ Created on Mon Aug 01 01:11:02 2016
 @author: DIP
 """
 
+=======
+>>>>>>> Stashed changes
 CONTRACTION_MAP = {
 "ain't": "is not",
 "aren't": "are not",
