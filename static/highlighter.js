@@ -1,7 +1,7 @@
 var arr = ['i', 'me', 'myself', 'mine', 'my'];
 //locate the element on the page to do the word operations
 //this will find the first <p> tag
-var textbox = document.getElementsByName('thetext')[0];
+var textbox = document.getElementsByName('section1')[0];
 
 var highlightPWords = function() {
   //foreach word, perform highlighting actions
@@ -45,7 +45,8 @@ var arrA = [
 
 //locate the element on the page to do the word operations
 //this will find the first <p> tag
-var textbox = document.getElementsByName('thetext')[0];
+var textbox = document.getElementsByName('section1')[0];
+console.log(textbox)
 
 var highlightAWords = function() {
   //foreach word, perform highlighting actions
