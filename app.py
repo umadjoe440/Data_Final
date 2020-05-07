@@ -106,6 +106,7 @@ def sentiment_score(text):
 def pronomialization(text):
     noun_count = check_pos_tag(text, 'noun')
     print(f"noun count is:  {noun_count}")
+    print(f"pronoun count is:  {personal_pronouns(text)}")
     # return n / d if d else 0
     return(personal_pronouns(text)/noun_count if noun_count else 0)
 
